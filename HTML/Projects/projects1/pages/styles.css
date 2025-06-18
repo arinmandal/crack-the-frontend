@@ -1,0 +1,131 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e23744;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header img {
+  height: 40px;
+  filter: brightness(0) invert(1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+/* Main Layout */
+main {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Headings */
+main h2 {
+  color: #e23744;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+/* Forms */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+input,
+textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #e23744;
+  box-shadow: 0 0 5px rgba(226, 55, 68, 0.4);
+}
+
+/* Button */
+button {
+  padding: 12px;
+  background-color: #e23744;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #b91c2a;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+  }
+
+  form {
+    width: 100%;
+    padding: 15px;
+  }
+}

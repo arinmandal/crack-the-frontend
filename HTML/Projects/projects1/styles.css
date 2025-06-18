@@ -1,0 +1,122 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e23744;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header img {
+  height: 40px;
+  filter: brightness(0) invert(1); /* Makes dark logos visible on red */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+/* Hero Section */
+main section:first-child {
+  background: url('./image/image.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+main section:first-child::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+main section:first-child h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+main section:first-child input {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  width: 300px;
+  max-width: 90%;
+  z-index: 1;
+  outline: none;
+  transition: 0.3s;
+}
+
+main section:first-child input:focus {
+  box-shadow: 0 0 10px #e23744;
+  transform: scale(1.05);
+}
+
+/* About Section */
+main section:nth-child(2) {
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+main section:nth-child(2) h2 {
+  color: #e23744;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+main section:nth-child(2) p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  font-size: 0.9rem;
+}
