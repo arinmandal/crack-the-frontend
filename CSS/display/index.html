@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Inline-Block-BlockInline</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        /* This border will increase the size of the box; now the box size is 404 and 154 when the universal selector is not selected as box-sizing: border-box. */
+        border: 2px solid black;
+        background-color: yellowgreen;
+        color: white;
+        width: 400px;
+        height: 150px;
+        margin-bottom: 20px; /* Added for separation */
+      }
+
+      .block-element {
+        background-color: lightcoral;
+        margin-bottom: 20px;
+        padding: 15px;
+        color: white;
+      }
+
+      span {
+        background-color: yellow;
+        color: black; /* Changed to black for better contrast with yellow */
+        border: 1px solid gray;
+        margin: 10px; /* Horizontal margin works, vertical margin is tricky on inline */
+        padding: 10px 25px; /* Shorthand for top/bottom and left/right padding */
+      }
+
+      .inline-block {
+        display: inline-block;
+        background-color: blueviolet;
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Display Properties Demonstration</h1>
+
+    <h2>Box Model (with `box-sizing: border-box;`)</h2>
+    <div class="box">Box Model Example (a block-level div with set dimensions)</div>
+
+    <h2>Block Element</h2>
+    <div class="block-element">
+      This is a default Block Element. It takes up 100% width and creates a new
+      line.
+    </div>
+    <div class="block-element">
+      Another Block Element. See how they stack vertically.
+    </div>
+
+    <h2>Inline Elements</h2>
+    <span>Hello World!</span>
+    <span>I am an inline element.</span>
+    <span>And I am another inline element.</span>
+    <span>
+      Notice how horizontal margin/padding works, but vertical margin doesn't
+      push elements above/below.
+    </span>
+
+    <h2>Inline-Block Element</h2>
+    <div class="inline-block">
+      Inline Block. I can sit next to other inline/inline-block elements, but I
+      have a defined width, height, padding, and margin.
+    </div>
+    <span>Next to inline-block.</span>
+    <div class="inline-block">
+      Another Inline Block.
+    </div>
+  </body>
+</html>
