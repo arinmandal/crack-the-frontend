@@ -8,21 +8,21 @@ Welcome to **crack-the-frontend** – your all-in-one personal repository to pre
 
 This repo is organized into multiple folders to help you practice and revise each essential area of frontend development:
 
-### 🧠 `javascript/`
+### 🧠 [`javascript/`](./javascript/)
 
 - Basic to advanced concepts
 - DOM manipulation
 - Async programming (Promises, async/await)
 - Tricky interview questions
 
-### 🎨 `css/`
+### 🎨 [`css/`](./CSS/)
 
 - Layouts (Flexbox, Grid)
 - Responsive design
 - Animations and transitions
 - CSS challenges
 
-### ⚛️ `react/`
+### ⚛️ [`react/`](./react/)
 
 - React basics and hooks
 - State management (Context API, etc.)
@@ -35,7 +35,7 @@ This repo is organized into multiple folders to help you practice and revise eac
 - Apps like Todo, Tic-Tac-Toe, Infinite Scroll
 - Focus on clean code and component breakdown
 
-### 🧱 `system-design/`
+### 🧱 [`system-design/`](./system-design/)
 
 - Frontend architecture concepts
 - Common frontend system design questions
