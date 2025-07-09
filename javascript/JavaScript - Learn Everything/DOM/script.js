@@ -22,3 +22,13 @@ console.log(abc);
 /* let abc = document.querySelectorAll("h1");
 console.log(abc); */
 
+// Todo: DOM content Manipulation
+
+let h1 = document.querySelector("h1");
+
+// ? textContent
+// h1.textContent = "Hello DOM";
+
+//? change HTML
+/* h1.innerHTML = "<strong>Hello World!</strong>";
+console.dir(h1); */
