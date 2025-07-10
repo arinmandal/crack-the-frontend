@@ -50,3 +50,18 @@ img.setAttribute(
 
 // ? removeAttribute
 // img.removeAttribute("src");
+
+// Todo: Dynamic DOM manipulation: createElement, appendChild, removeChild, prepend
+/* let h2 = document.createElement("h2");
+h2.textContent = "Dynamic DOM";
+document.querySelector("body").appendChild(h2);
+document.querySelector("body").prepend(h2); */
+
+// ? Style Changes
+/* h2.style.color = "crimson";
+h2.style.fontFamily = "Inter";
+h2.classList.add("elm"); */
+
+
+
+
