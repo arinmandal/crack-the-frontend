@@ -4,12 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      .container {
+        width: 100%;
+        margin: 10px auto;
+        min-height: 300px;
+        background-color: rgb(100, 98, 98);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container .head {
+        font-size: 5rem;
+        color: skyblue;
+        font-weight: 400;
+      }
+    </style>
   </head>
   <body>
     <h1 id="abc" class="abc">Hello Brothers!</h1>
-
     <a href="">Download Now</a>
     <img src="" alt="" />
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, cumque!</p>
+    <input type="text" placeholder="Type something ..." />
+
+    <div>
+      <h3 id="device">Select your device</h3>
+      <select>
+        <option selected disabled>Choose your device</option>
+        <option value="Samsung">Samsung</option>
+        <option value="Google">Google Pixel</option>
+        <option value="Mi">Xiaomi</option>
+        <option value="Oppo">Oppo</option>
+      </select>
+    </div>
+
+    <div class="container">
+      <h1 class="head">Hello</h1>
+    </div>
+
     <script src="script.js"></script>
+    <script src="events.js"></script>
   </body>
 </html>

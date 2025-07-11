@@ -58,10 +58,7 @@ document.querySelector("body").appendChild(h2);
 document.querySelector("body").prepend(h2); */
 
 // ? Style Changes
-/* h2.style.color = "crimson";
-h2.style.fontFamily = "Inter";
-h2.classList.add("elm"); */
-
-
-
+// h2.style.color = "crimson";
+// h2.style.fontFamily = "Inter";
+// h2.classList.add("elm");
 
