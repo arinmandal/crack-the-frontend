@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Master Form Validation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+      }
+      .form-container {
+        /* background-color: red; */
+        width: 350px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgb(214, 208, 208);
+        box-shadow: inset;
+      }
+      form {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+      }
+      input,
+      select,
+      textarea {
+        padding: 10px 8px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+      }
+      #hide {
+        display: none;
+        color: red;
+        font-size: 10px;
+        padding-top: 15px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <form>
+        <!-- required pattern="[a-z]{3-8}" minlength="3" maxlength="8" -->
+        <input id="name" type="text" placeholder="Name" />
+        <span id="hide">Name should be in 4 character</span>
+        <br />
+        <input id="email" type="email" placeholder="Email" />
+        <br />
+        <input id="password" type="password" placeholder="Password" />
+        <br />
+        <select id="gender" name="gender" id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <br />
+        <textarea
+          id="textarea"
+          placeholder="Tell something about you"
+        ></textarea>
+        <br />
+        <input type="submit" />
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
