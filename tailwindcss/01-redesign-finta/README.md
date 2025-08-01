@@ -4,6 +4,7 @@ This project is a redesign of the Finta landing page, built using [TailwindCSS](
 It is part of the [crack-the-frontend](https://github.com/crack-the-frontend) repository.
 
 ## Features
+
 - Modern radial gradient background
 - Clean navigation bar
 - Hero section with call-to-action buttons
@@ -24,7 +25,7 @@ It is part of the [crack-the-frontend](https://github.com/crack-the-frontend) re
 
 ## Preview
 
-![Preview](/public/preview.png)
+![Preview](public/preview.png)
 
 ## Built With
 
